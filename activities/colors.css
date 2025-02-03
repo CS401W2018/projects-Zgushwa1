@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(130, 169, 241)
+}
+
+footer p {
+    color: #3399FF;
+}
+#secondpar {
+    color: chartreuse;
+}
+
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+    background-color: bisque;
+}
+.bigger {
+    font-size: 18pt;
+}
+
+.bolder {
+    font-weight: bold;
+}
