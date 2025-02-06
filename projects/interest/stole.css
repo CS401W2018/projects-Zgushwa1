@@ -10,6 +10,15 @@ header { background-color: green;
 h1 { color: ivory;
 
 }
-span {
-    font-style: italic;
+span.emphasize { color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+#IN { 
+    font-display: bold;
+    font-size: 15px;
+}
+
+.p { color: blue;
+}
+
