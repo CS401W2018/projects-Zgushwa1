@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(bluebg.jpg) rgb(0, 0, 111)
+}
+
+.mylist {
+    list-style: circle;
+    list-style-image: url(none);
+}
+
+header {
+    background-image: url(wave.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: white;
+
+}
