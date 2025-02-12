@@ -1,9 +1,25 @@
 body {
-    background: url(Flag_of_Mongolia.svg)
+    background-image:  url(Flag_of_Mongolia.svg);
 
     }
     
+header {
+    background:  url('GenghisKhan.jpg') top right no-repeat;
+}
+
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav a {
+    color: yellow;
+}
+
+.current {
+    color: white;
 }
 
