@@ -1,5 +1,7 @@
 body {
     background-image:  url(Flag_of_Mongolia.svg);
+    background-repeat: no-repeat right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
     }
     
@@ -27,11 +29,10 @@ nav a {
 }
 
  
-   .page2 {
-    background-image: url(Ulaanbaatar.jpg);
+.page2 {
     background-repeat: no-repeat right;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
- }
+}
 
 li {
     font-size: 20px;
@@ -42,8 +43,7 @@ li {
 ul li { 
     list-style-image: url(favicon-16x16.png);
 }
-
 .Homepage {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+    background-repeat: no-repeat right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
