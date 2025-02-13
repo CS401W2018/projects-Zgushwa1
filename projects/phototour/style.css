@@ -3,23 +3,47 @@ body {
 
     }
     
-header {
+.header {
     background:  url('GenghisKhan.jpg') top right no-repeat;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
+    font-size: 40px;
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
+    font-size: 40px;
+
 }
 
 nav a {
-    color: yellow;
+    color: black;
 }
 
 .current {
-    color: white;
+    color:white;
 }
 
+ 
+   .page2 {
+    background-image: url(Ulaanbaatar.jpg);
+    background-repeat: no-repeat right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ }
+
+li {
+    font-size: 20px;
+    color: black;
+    
+}
+
+ul li { 
+    list-style-image: url(favicon-16x16.png);
+}
+
+.Homepage {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
