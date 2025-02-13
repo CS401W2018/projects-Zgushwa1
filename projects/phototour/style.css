@@ -1,12 +1,12 @@
 body {
-    background-image:  url(Flag_of_Mongolia.svg);
-    background-repeat: no-repeat right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    background-image: url(Flag_of_Mongolia.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-    }
-    
 .header {
-    background:  url('GenghisKhan.jpg') top right no-repeat;
+    background: url('GenghisKhan.jpg') top right no-repeat;
 }
 
 h1 {
@@ -17,7 +17,6 @@ h1 {
 h2 {
     text-align: left;
     font-size: 40px;
-
 }
 
 nav a {
@@ -25,25 +24,26 @@ nav a {
 }
 
 .current {
-    color:white;
+    color: white;
 }
 
- 
 .page2 {
-    background-repeat: no-repeat right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 li {
     font-size: 20px;
     color: black;
-    
 }
 
-ul li { 
+ul li {
     list-style-image: url(favicon-16x16.png);
 }
+
 .Homepage {
-    background-repeat: no-repeat right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
