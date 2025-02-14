@@ -1,8 +1,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+   
+}
+.beach {
+    width: 300px;
+    border: thin solid black;
+    margin-left: 10px auto;
 }
 
-
+.beach img {
+    width: 100%;
+}
 
 header {
     background-color: burlywood;
