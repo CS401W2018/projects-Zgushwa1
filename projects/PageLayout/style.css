@@ -1,49 +1,90 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: gold;
-}
-
-nav a {
-display: block;
-background-color: red;
-padding: 5px 5px;
-color-scheme: black;
-border-bottom:thin solid black;
-width: auto;
-
-}
-
-
-
-nav a:hover{
-    color: blue;
-    background-color: black;
-    box-shadow: ;
+    position: relative;
+    height: 100vh;
 }
 
 #wrapper {
-    width: fit-content;
-margin: auto;
-border: thin solid black;
-border-radius: 5px;
-
+    width: 100%;
+    padding: 20px;
 }
 
-header{
+#header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     text-align: center;
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-style: italic;
-    text-transform:capitalize;
-    line-height:normal;
-    text-shadow: 5px;
-    
-    
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-image: url('Traditional_Yurts.jpg');
+    background-size: cover;
+    padding: 20px;
 }
 
-figure{
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: red;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    color: black;
+    border: thin solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: black;
+}
+
+figure {
     float: left;
+    margin: 10px;
+    padding: 5px;
+    border: thin solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.Horses img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border-top: thin solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#footer2 {
+    position: relative;
+}
+
+#footer2 img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
