@@ -1,21 +1,18 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: gold;
-    position: relative;
-    height: 100vh;
 }
 
 #wrapper {
-    width: 100%;
+    width: 800px;
+    height: 800px;
+    margin:auto;
+    border: thin solid black;
+    border-radius: 5px;
     padding: 20px;
 }
 
-#header {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+header {
     text-align: center;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,33 +20,27 @@ body {
     font-style: italic;
     text-transform: capitalize;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    background-image: url('Traditional_Yurts.jpg');
+    line-height:  100px;
+    background-image: url('Traditional_Yurts.jpg'); 
+    background-origin: border-box;
+    background-clip: content-box;
     background-size: cover;
     padding: 20px;
+    color: white;
+    border-radius: 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
     background-color: red;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
-    display: block;
-    background-color: aquamarine;
-    padding: 10px 20px;
+    background-color: blue;
+    padding: 4px 4px;
     color: black;
     border: thin solid black;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: blue;
-    background-color: black;
+    border-radius: 10px;
 }
 
 figure {
@@ -61,30 +52,12 @@ figure {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.Horses img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 footer {
-    height: 100px;
-    text-align: center;
-    padding: 10px;
+    background-color: red;
     border-top: thin solid black;
+    line-height: normal;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-#footer2 {
     position: relative;
-}
-
-#footer2 img {
-    width: 50px;
     height: auto;
-    border-radius: 5px;
 }
