@@ -1,0 +1,38 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "navigation navigation navigation"
+        "aside1 main aside2"
+        "footer footer footer";
+}
+
+header { grid-area: header; }
+nav { grid-area: navigation; }
+.aside1 { grid-area: aside1; }
+.aside2 { grid-area: aside2; }
+main { grid-area: main; }
+footer { 
+    grid-area: footer;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.itemA { grid-area: main2; }
+.itemB { grid-area: header2; }
+.itemC { grid-area: header1; }
+.itemD { grid-area: main3; }
+.itemE { grid-area: main1; }
+.itemF { grid-area: header3; }
+
+
+.item {
+    background-color: aliceblue;
+}

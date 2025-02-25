@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/activities/position/positioning.html"
+    "livePreview.defaultPreviewPath": "/activities/position/positioning.html",
+    "liveServer.settings.port": 5501
 }
