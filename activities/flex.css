@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: lightblue;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+.parent {
+    background-color: yellow;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.child {
+    background-color: violet;
+    width: 100px;
+}
