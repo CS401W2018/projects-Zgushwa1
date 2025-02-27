@@ -6,13 +6,17 @@ nav {
     display: flex;
     background-color: lightblue;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav a {
     display: block;
     background-color: chartreuse;
     padding: 10px;
+}
+
+.featured {
+    order: -1;
 }
 
 .parent {
@@ -23,5 +27,5 @@ nav a {
 
 .child {
     background-color: violet;
-    width: 100px;
+    width: 150px;
 }
