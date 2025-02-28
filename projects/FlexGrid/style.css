@@ -1,0 +1,18 @@
+header {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: lightblue;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+nav a {
+    display: block;
+    background-color: navy;
+    padding: 10px;
+}
