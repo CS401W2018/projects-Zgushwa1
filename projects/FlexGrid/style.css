@@ -1,18 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 0px;
+}
+
 header {
-    background-color: lightblue;
-    padding: 10px;
     text-align: center;
+    padding: 20px;
+    margin: 0%;
+    background-color: lightblue;
+}
+
+h1 {
+    margin: 0;
 }
 
 nav {
     display: flex;
-    background-color: lightblue;
-    gap: 10px;
-    justify-content: space-evenly;
-    padding: 5px;
+    justify-content: space-around;
+    padding: 20px;
 }
+
 nav a {
-    display: block;
-    background-color: navy;
+    color: black;
     padding: 10px;
+    display: block;
+}
+
+.lorem {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+.flower {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.Links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
 }
