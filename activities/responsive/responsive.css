@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    color: white;
+    background-color: white;
+}
+
+header {
+    background-color: pink;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.card {
+    border: thin solid #000;
+    box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
+    width: 250px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
