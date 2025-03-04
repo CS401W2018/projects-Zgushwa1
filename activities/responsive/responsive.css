@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+main {
+    padding: 20px;
+}
+
 .row {
     display: flex;
     justify-content: space-around;
@@ -42,6 +46,7 @@ header h1 {
     border: thin solid #000;
     box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
     width: 250px;
+    margin: 10px; /* Add margin to create space between cards */
 }
 
 .card figure {

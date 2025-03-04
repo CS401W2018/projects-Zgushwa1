@@ -34,3 +34,13 @@ header h1 {
 .card img {
     width: 100%;
 }
+
+.word {
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+}
