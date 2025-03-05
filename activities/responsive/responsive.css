@@ -46,7 +46,7 @@ header h1 {
     border: thin solid #000;
     box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
     width: 250px;
-    margin: 10px; /* Add margin to create space between cards */
+    margin: 10px;
 }
 
 .card figure {
@@ -55,4 +55,28 @@ header h1 {
 
 .card img {
     width: 100%;
+}
+
+@media ONLY screen AND (max-width: 610px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+   }
+   .feature {
+        order:-1;
+   }
+}
+
+@media ONLY screen AND (max-width: 450px) {
+    nav { 
+        flex-direction: column;
+    }
+    nav a {
+        border-radius: 0;
+        border-bottom: thin solid white;
+    }
 }
