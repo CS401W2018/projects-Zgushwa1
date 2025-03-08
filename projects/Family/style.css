@@ -23,11 +23,11 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 0 15px;
+    padding: 10px;
 }
 
 .container {
@@ -92,36 +92,32 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
     }
-    aside {
-        width: 100%;
-    }
-    main {
-        width: 100%;
-    }
-    .row {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    article {
-        width: 45%;
-        margin-bottom: 15px;
-    }
-}
 
-@media (max-width: 700px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
     .row {
         flex-direction: column;
         align-items: center;
     }
+
     article {
         width: 80%;
         margin-bottom: 15px;
