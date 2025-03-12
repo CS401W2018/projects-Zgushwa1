@@ -1,3 +1,36 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+main p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+.schedule {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.5);
+    caption-side: bottom;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 5px;
+}
+
+.schedule th {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.schedule thead th {
+    background-color: blue !important;
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
