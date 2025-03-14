@@ -48,7 +48,7 @@ aside {
     flex: 1;
     background-color: white;
     padding: 10px;
-    margin-left: 10px #FFC72C;
+    margin-left: 10px;
 }
 
 table {
@@ -78,15 +78,9 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: white;
+    background-color: #FFC72C;
 }
 
 tr:nth-child(odd) {
-    background-color: white;
-}
-
-.Warriors {
-    background-color: #FFC72C;
-    color: #1D428A;
-    font-weight: bold;
+    background-color:gray;
 }
