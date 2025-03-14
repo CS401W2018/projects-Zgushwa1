@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gold;
+    color: #333;
+}
+
+header, footer {
+    background-color: #1D428A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: #FFC72C;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1D428A;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px #FFC72C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1D428A;
+    padding: 5px;
+}
+
+th, td {
+    border: 1px solid #1D428A;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFC72C;
+    color: #1D428A;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.Warriors {
+    background-color: #FFC72C;
+    color: #1D428A;
+    font-weight: bold;
+}
