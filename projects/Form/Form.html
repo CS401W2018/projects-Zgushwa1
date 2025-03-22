@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zack's Pizza Shop</title>
+  <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+  <header>
+    <h1>Zack's Pizza Shop</h1>
+  </header>
+
+  <main>
+    <form action="submit.html" method="post">
+      <fieldset>
+        <legend>Pizza Order</legend>
+
+        <div class="form-row">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-row">
+          <label for="Coupon Code">Coupon Code:</label>
+          <input type="Coupon Code" id="Coupon Code" name="Coupon Code">
+        </div>
+
+        <div class="radio-row">
+          <div class="radio-label">Crust Type:</div>
+          <div class="radio-options">
+            <label><input type="radio" name="crust" value="hand"> Hand Tossed</label>
+            <label><input type="radio" name="crust" value="thin"> Thin Crust</label>
+            <label><input type="radio" name="crust" value="pan"> Pan</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label><input type="checkbox" name="extra-cheese"> Extra Cheese</label>
+        </div>
+
+        <div class="form-row">
+          <label for="instructions">Instructions:</label>
+          <textarea id="instructions" name="instructions"></textarea>
+        </div>
+
+        <div class="form-row">
+          <input type="submit" value="Place Order">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zackary Gushwa</p>
+  </footer>
+</body>
+</html>
