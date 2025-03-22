@@ -1,10 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff3cd;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #b22222;
+    background-color: rgb(11, 11, 134);
     color: white;
     text-align: center;
     padding: 20px;
@@ -12,7 +12,7 @@ header {
 }
 
 footer {
-    background-color: #8b0000;
+    background-color: rgb(11, 11, 134);
     color: white;
     text-align: center;
     padding: 15px;
@@ -20,15 +20,15 @@ footer {
 }
 
 fieldset {
-    background-color: #ffd700;
+    background-color: rgb(87, 166, 235);
     border-radius: 5px;
     padding: 15px;
     border: none;
 }
 
 legend {
-    background-color: #8b0000;
-    color: white;
+    background-color: rgb(11, 11, 134);
+    color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -45,42 +45,39 @@ legend {
     text-align: right;
 }
 
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
 input:not([type="submit"]), select, textarea {
     padding: 8px;
     width: 100%;
     max-width: 300px;
     border-radius: 5px;
-    border: 1px solid #b22222;
-    background-color: #fff8e1;
+    border: 1px solid #ccc;
+    background-color: #ddd;
     font-family: 'Courier New', Courier, monospace;
 }
 
 input:not([type="submit"]):focus {
-    background-color: white;
+    background-color: #fff;
 }
 
-.radio-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-}
-
-.radio-options {
+.crust-options {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 5px;
 }
 
-.radio-options label {
+.crust-options label {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 input[type="submit"] {
-    background-color: #e60000;
+    background-color: rgb(11, 11, 134);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -92,15 +89,16 @@ input[type="submit"] {
 }
 
 @media ONLY screen AND (max-width: 600px) {
-    .form-row, .radio-row {
+    .form-row {
         flex-direction: column;
     }
 
     .form-row label {
         text-align: left;
+        width: 100%;
     }
 
-    .radio-row {
-        align-items: flex-start;
+    .form-spacer {
+        text-align: left;
     }
 }
