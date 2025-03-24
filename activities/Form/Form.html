@@ -9,13 +9,13 @@
 <body>
     <header><h1>Web Design</h1></header>
     <main>
-        <form action="processing.html" method="get">
+        <form id="myForm" action="processing.html" method="get">
             <fieldset>
                 <legend>Create Account</legend>
                 
                 <div class="form-row">
-                    <label for="fname">Full Name:</label>
-                    <input type="text" name="fullname" id="fname" value="Zack">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" value="Zack">
                 </div>
 
                 <div class="form-row">
@@ -25,7 +25,12 @@
 
                 <div class="form-row">
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="pass" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age">
                 </div>
 
                 <div class="form-row">
@@ -70,11 +75,49 @@
         <p>What are different ways to style your form?</p>
         <p>It makes it more user-friendly. It allows you to have a responsive webpage and helps with the alignment of your page.</p>
         <p>Why does the professor like to use flex?</p>
-        <p>Flex allows to have dynamic layouts, keep the code clean, andhelps with compatability. </p>
+        <p>Flex allows to have dynamic layouts, keep the code clean, and helps with compatibility. </p>
+        <p>What is JavaScript? How did it get its name?</p>
+        <p>It was a close competition between the two big companies back then. Son microsystem wanted to bring java in</p>
+        <p>What are the two ways you can run JavaScript?</p>
+        <p>The first way is called in the dom. The second way is downloading a program called node.js</p>
+        <p>What was the most popular front-end js library?</p>
+        <p>It used to be called jQuery</p>
+        <p>What is the most popular front-end js library today?</p>
+        <p>React</p>
     </main>
 
     <footer>
         <p>&copy; 2025 Zackary Gushwa</p>
     </footer>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+            const age = document.getElementById("age").value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age < 18) {
+                alert("You need to be 18.");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
