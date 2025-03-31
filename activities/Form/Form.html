@@ -94,29 +94,6 @@
         <p>&copy; 2025 Zackary Gushwa</p>
     </footer>
 
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const fullname = document.getElementById("fullname").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("pass").value;
-            const age = document.getElementById("age").value;
-
-            if (!fullname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age
-            };
-
-            console.log(formData);
-        });
-    </script>
+    <script src="Form.js"></script>
 </body>
 </html>
