@@ -1,19 +1,22 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #fefefe;
   color: #2b2b2b;
   text-align: center;
+}
+
+header {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   background-color: #1a3e8a;
   color: #ffcc00;
   padding: 25px;
-  margin: 0;
   font-size: 36px;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 nav {
@@ -22,14 +25,12 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   color: white;
   padding: 12px 18px;
   display: inline-block;
   font-weight: bold;
   font-size: 16px;
   border-radius: 4px;
-  transition: background-color 0.3s;
 }
 
 nav a:hover {
@@ -48,7 +49,7 @@ main {
   padding: 25px;
 }
 
-.card-container {
+.card-container, .food {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -56,7 +57,7 @@ main {
   padding: 20px 0;
 }
 
-.card {
+.card, .dish {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -66,19 +67,19 @@ main {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.card img, .dish img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-.card h3 {
+.card h3, .dish h3 {
   margin: 10px 0 5px;
   color: #1a3e8a;
 }
 
-.card p {
+.card p, .dish p {
   font-size: 15px;
 }
 
@@ -108,16 +109,16 @@ table {
   margin: 8px 0 12px;
 }
 
-.destinations {
+.destinations, .places {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   padding: 30px 0;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.destination-card {
+.destination-card, .place {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -126,7 +127,7 @@ table {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.destination-card img {
+.destination-card img, .place img {
   width: 100%;
   max-height: 180px;
   object-fit: cover;
@@ -134,25 +135,21 @@ table {
   margin-bottom: 10px;
 }
 
-.destination-card h3 {
+.destination-card h3, .place h3 {
   margin: 12px 0 6px;
   color: #1a3e8a;
 }
 
-.destination-card p {
+.destination-card p, .place p {
   font-size: 15px;
   margin: 10px 0;
 }
 
-.info-list {
+.info-list, .homeinfo {
   text-align: left;
   max-width: 700px;
   margin: 0 auto 20px;
   padding-left: 20px;
-}
-
-.info-list li {
-  margin-bottom: 10px;
 }
 
 caption {
@@ -189,7 +186,78 @@ footer {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
+.homepic {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.homepic img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.homecredit {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.hometext {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.homefact {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffcc00;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a6282f;
+  max-width: 800px;
+  margin: 30px auto 0;
+  border-radius: 6px;
+}
+
+.info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.info h3 {
+  text-align: center;
+  color: #1a3e8a;
+  margin-top: 10px;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+.welcomeheading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
   nav a {
     display: block;
     padding: 15px;
@@ -207,5 +275,13 @@ footer {
 
   p, td, th {
     font-size: 15px;
+  }
+
+  .homeinfo {
+    padding-left: 10px;
+  }
+
+  .destinations, .places {
+    grid-template-columns: 1fr;
   }
 }
