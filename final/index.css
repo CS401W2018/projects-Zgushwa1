@@ -263,11 +263,6 @@ main section {
     font-size: 18px;
   }
 
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   h1 {
     font-size: 28px;
   }
@@ -276,11 +271,57 @@ main section {
     font-size: 15px;
   }
 
+  .card-container,
+  .food {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .dish {
+    width: 90%;
+  }
+
   .homeinfo {
     padding-left: 10px;
   }
 
-  .destinations, .places {
+  .destinations,
+  .places {
     grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .place,
+  .destination-card {
+    width: 100%;
+  }
+
+  .info {
+    padding: 0 10px;
+  }
+
+  .homepic img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .image-block {
+    padding: 0 10px;
+  }
+
+  .welcomeheading {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 15px 10px;
   }
 }
