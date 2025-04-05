@@ -3,15 +3,18 @@ body {
   background-color: #fefefe;
   color: #2b2b2b;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
+  background-color: #1a3e8a;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  background-color: #1a3e8a;
   color: #ffcc00;
   padding: 25px;
   font-size: 36px;
@@ -21,6 +24,8 @@ h1 {
 
 nav {
   background-color: #a6282f;
+  width: 100%;
+  margin: 0;
   padding: 12px 0;
 }
 
@@ -145,13 +150,6 @@ table {
   margin: 10px 0;
 }
 
-.info-list, .homeinfo {
-  text-align: left;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  padding-left: 20px;
-}
-
 caption {
   font-size: 20px;
   margin-bottom: 10px;
@@ -181,9 +179,10 @@ tr:nth-child(odd) {
 footer {
   background-color: #4e342e;
   color: white;
-  padding: 18px;
+  padding: 18px 0;
   font-size: 14px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .homepic {
