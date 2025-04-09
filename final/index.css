@@ -185,6 +185,16 @@ footer {
   width: 100%;
 }
 
+.dish .match-img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
 .homepic {
   max-width: 800px;
   margin: 0 auto 20px;
