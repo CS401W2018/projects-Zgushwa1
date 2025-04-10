@@ -210,6 +210,13 @@ footer {
   border-radius: 6px;
 }
 
+.homeinfo li {
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.0;
+}
+
+
 .homecredit {
   font-size: 13px;
   color: #777;
@@ -235,6 +242,24 @@ footer {
   margin: 30px auto 0;
   border-radius: 6px;
 }
+
+.formRow {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.formRow label {
+  width: 150px;
+  text-align: right;
+}
+
+.formSpacer {
+  width: 150px;
+  text-align: right;
+}
+
 
 .info {
   max-width: 900px;
@@ -295,6 +320,7 @@ main section {
   .homeinfo {
     padding-left: 10px;
   }
+  
 
   .destinations,
   .places {

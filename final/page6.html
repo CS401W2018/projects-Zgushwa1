@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan Your Mongolian Trip</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header><h1>Mongolian Tourism</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Destinations</a>
+    <a href="page3.html">Cuisine</a>
+    <a href="page4.html">Culture</a>
+    <a href="page5.html"> Travel Tips</a>
+    <a href="page6.html" class="current">Plan Your Trip</a>
+  </nav>
+
+  <main>
+
+    <h3 class="welcomeheading">Why Visit Mongolia?</h3>
+    <img src="MongolianFlag.png" alt="Mongolian Flag" class="homepic">
+    <ul class="homeinfo">
+      <li>Explore vast open landscapes and untouched nature.</li>
+      <li>Experience the Naadam Festival and ancient traditions.</li>
+      <li>Stay in a ger and learn about nomadic life firsthand.</li>
+      <li>Ride horses across the steppe like Genghis Khan's warriors.</li>
+      <li>Enjoy warm hospitality and unique cultural experiences.</li>
+    </ul>
+    
+    <p class="hometext">
+      Ready to start planning your journey to Mongolia? Let us know your interests and travel goals below so we can help guide your adventure! Whether you're drawn to the nomadic lifestyle, historic sites, or breathtaking landscapes, there's something here for everyone.
+    </p>
+
+    <form id="tripForm" action="processing.html" method="get">
+        <fieldset>
+          <legend>Plan Your Mongolian Trip</legend>
+      
+          <div class="formRow">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="interests">Area of Interest:</label>
+            <select name="interests" id="interests" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="culture">Traditional Culture</option>
+              <option value="naadam">Naadam Festival</option>
+              <option value="nomadic">Nomadic Life</option>
+              <option value="food">Cuisine</option>
+              <option value="nature">Nature & Scenery</option>
+            </select>
+          </div>
+      
+          <div class="radioRow">
+            <label>Have you visited Mongolia before?</label>
+            <label><input type="radio" name="visited" value="yes" required> Yes</label>
+            <label><input type="radio" name="visited" value="no" required> No</label>
+          </div>
+      
+          <div class="formRow">
+            <label for="travel-date">Planned Travel Date:</label>
+            <input type="date" name="travel-date" id="travel-date" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" placeholder="Tell us more about your travel plans." required></textarea>
+          </div>
+      
+          <div class="formRow">
+            <label class="formSpacer"></label>
+            <input type="submit" value="Submit">
+          </div>
+        </fieldset>
+      </form>
+      
+
+    <p id="message"></p>
+
+    <p class="homefact">
+      Fun Fact: Mongolia is one of the most sparsely populated countries in the world—perfect for adventure, peace, and wide open skies!
+    </p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zackary Gushwa</p>
+  </footer>
+
+  <script src="Form.js"></script>
+
+</body>
+</html>
