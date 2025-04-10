@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Монголд Аяллаа Төлөвлө</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header><h1>Монголын Аялал Жуулчлал</h1></header>
+
+  <nav>
+    <a href="index.html">Нүүр</a>
+    <a href="page2.html">Очих Газрууд</a>
+    <a href="page3.html">Хоол</a>
+    <a href="page4.html">Соёл</a>
+    <a href="page5.html">Аяллын Зөвлөгөө</a>
+    <a href="page6.html" class="current">Аяллаа Төлөвлөх</a>
+  </nav>
+
+  <main>
+
+    <h3 class="welcomeheading">Яагаад Монголыг Зочлох хэрэгтэй вэ?</h3>
+    <img src="MongolianFlag.png" alt="Монголын Туг" class="homepic">
+    <ul class="homeinfo">
+      <li>Хязгааргүй тал нутгаар аялж, байгалийн онгон төрхийг мэдэрнэ.</li>
+      <li>Наадмыг үзэж, эртний уламжлалуудтай танилцана.</li>
+      <li>Гэрт амьдарч, нүүдлийн амьдралыг биечлэн мэдэрнэ.</li>
+      <li>Чингис хааны дайчид шиг морь унаж тал нутгаар давхина.</li>
+      <li>Нутгийн халуун дулаан зочломтгой байдал, өвөрмөц соёлтой танилцана.</li>
+    </ul>
+    
+    <p class="hometext">
+      Монгол руу хийх аяллаа төлөвлөхөд бэлэн үү? Доорх маягтыг бөглөснөөр таны сонирхол, зорилгод тохирсон аялалд тань тусалж чадна. Та нүүдэлчин амьдралд, түүхэн дурсгалт газруудад эсвэл байгалийн үзэсгэлэнтэй байгальд татагдаж байгаагаас үл хамааран Монголд хүн бүрт тохирох зүйл бий.
+    </p>
+
+    <form id="tripForm" action="processing.html" method="get">
+        <fieldset>
+          <legend>Монголд Аяллаа Төлөвлө</legend>
+      
+          <div class="formRow">
+            <label for="fullname">Овог, Нэр:</label>
+            <input type="text" name="fullname" id="fullname" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="email">И-мэйл:</label>
+            <input type="email" name="email" id="email" placeholder="ta@example.com" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="interests">Сонирхож буй зүйл:</label>
+            <select name="interests" id="interests" required>
+              <option value="" disabled selected>Сонгоно уу</option>
+              <option value="culture">Уламжлалт Соёл</option>
+              <option value="naadam">Наадмын Баяр</option>
+              <option value="nomadic">Нүүдлийн Амьдрал</option>
+              <option value="food">Хоол</option>
+              <option value="nature">Байгаль & Үзэсгэлэнт Газар</option>
+            </select>
+          </div>
+      
+          <div class="radioRow">
+            <label>Өмнө нь Монголд очиж байсан уу?</label>
+            <label><input type="radio" name="visited" value="yes" required> Тийм</label>
+            <label><input type="radio" name="visited" value="no" required> Үгүй</label>
+          </div>
+      
+          <div class="formRow">
+            <label for="travel-date">Төлөвлөж буй Аяллын Огноо:</label>
+            <input type="date" name="travel-date" id="travel-date" required>
+          </div>
+      
+          <div class="formRow">
+            <label for="comments">Сэтгэгдэл:</label>
+            <textarea name="comments" id="comments" placeholder="Аяллынхаа талаар дэлгэрэнгүй бичнэ үү." required></textarea>
+          </div>
+      
+          <div class="formRow">
+            <label class="formSpacer"></label>
+            <input type="submit" value="Илгээх">
+          </div>
+        </fieldset>
+      </form>
+
+    <p id="message"></p>
+
+    <p class="homefact">
+      Сонирхолтой баримт: Монгол бол дэлхийн хамгийн цөөн хүн амтай орнуудын нэг бөгөөд адал явдал, амар амгалан байдал, уудам тэнгэрийг хүсэгчдэд төгс тохирно!
+    </p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Заккари Гушва</p>
+  </footer>
+
+  <script src="Form.js"></script>
+
+</body>
+</html>

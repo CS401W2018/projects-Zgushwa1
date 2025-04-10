@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #2b2b2b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1a3e8a;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #ffcc00;
+    padding: 25px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #a6282f;
+    width: 100%;
+    margin: 0;
+    padding: 12px 0;
+  }
+  
+  nav a {
+    color: white;
+    padding: 12px 18px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    background-color: #ffcc00;
+    color: #1a3e8a;
+  }
+  
+  nav a.current {
+    background-color: #ffcc00;
+    color: #a6282f;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+  }
+  
+  .food {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .dish {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .dish h3 {
+    margin: 10px 0 5px;
+    color: #1a3e8a;
+  }
+  
+  .dish p {
+    font-size: 15px;
+  }
+  
+  table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .caption {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0 12px;
+  }
+  
+  .places {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .place {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .place img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .place h3 {
+    margin: 12px 0 6px;
+    color: #1a3e8a;
+  }
+  
+  .place p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  caption {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1a3e8a;
+    font-weight: bold;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #1a3e8a;
+    color: #ffcc00;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  footer {
+    background-color: #4e342e;
+    color: white;
+    padding: 18px 0;
+    font-size: 14px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .video {
+    padding: 10px;
+  }
+  
+  .dish .match-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .match-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .homepic {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .homepic img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .homeinfo li {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.0;
+  }
+  
+  .homecredit {
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .hometext {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .homefact {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffcc00;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a6282f;
+    max-width: 800px;
+    margin: 30px auto 0;
+    border-radius: 6px;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+  }
+  
+  .formRow label {
+    width: 150px;
+    text-align: right;
+  }
+  
+  .formSpacer {
+    width: 150px;
+    text-align: right;
+  }
+  
+  .info {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 15px;
+  }
+  
+  .info h3 {
+    text-align: center;
+    color: #1a3e8a;
+    margin-top: 10px;
+  }
+  
+  .info p {
+    font-size: 16px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+  
+  main section {
+    margin-bottom: 30px;
+  }
+  
+  .welcomeheading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    nav a {
+      display: block;
+      padding: 15px;
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p, td, th {
+      font-size: 15px;
+    }
+  
+    .food {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dish {
+      width: 90%;
+    }
+  
+    .homeinfo {
+      padding-left: 10px;
+    }
+  
+    .places {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .place {
+      width: 100%;
+    }
+  
+    .info {
+      padding: 0 10px;
+    }
+  
+    .homepic img {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .welcomeheading {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    footer {
+      font-size: 13px;
+      padding: 15px 10px;
+    }
+  }
+  
