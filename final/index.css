@@ -54,7 +54,7 @@ main {
   padding: 25px;
 }
 
-.card-container, .food {
+.food {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -62,7 +62,7 @@ main {
   padding: 20px 0;
 }
 
-.card, .dish {
+.dish {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -72,19 +72,19 @@ main {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img, .dish img {
+.dish img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-.card h3, .dish h3 {
+.dish h3 {
   margin: 10px 0 5px;
   color: #1a3e8a;
 }
 
-.card p, .dish p {
+.dish p {
   font-size: 15px;
 }
 
@@ -96,25 +96,13 @@ table {
   font-size: 16px;
 }
 
-.image-block {
-  max-width: 700px;
-  margin: 0 auto 20px;
-  text-align: center;
-}
-
-.image-block img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
 .caption {
   font-size: 14px;
   color: #555;
   margin: 8px 0 12px;
 }
 
-.destinations, .places {
+.places {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -123,7 +111,7 @@ table {
   margin: 0 auto;
 }
 
-.destination-card, .place {
+.place {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -132,7 +120,7 @@ table {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.destination-card img, .place img {
+.place img {
   width: 100%;
   max-height: 180px;
   object-fit: cover;
@@ -140,12 +128,12 @@ table {
   margin-bottom: 10px;
 }
 
-.destination-card h3, .place h3 {
+.place h3 {
   margin: 12px 0 6px;
   color: #1a3e8a;
 }
 
-.destination-card p, .place p {
+.place p {
   font-size: 15px;
   margin: 10px 0;
 }
@@ -207,7 +195,6 @@ footer {
   object-fit: cover;
 }
 
-
 .homepic {
   max-width: 800px;
   margin: 0 auto 20px;
@@ -228,7 +215,6 @@ footer {
   text-align: center;
   line-height: 1.0;
 }
-
 
 .homecredit {
   font-size: 13px;
@@ -272,7 +258,6 @@ footer {
   width: 150px;
   text-align: right;
 }
-
 
 .info {
   max-width: 900px;
@@ -319,13 +304,11 @@ main section {
     font-size: 15px;
   }
 
-  .card-container,
   .food {
     flex-direction: column;
     align-items: center;
   }
 
-  .card,
   .dish {
     width: 90%;
   }
@@ -333,16 +316,13 @@ main section {
   .homeinfo {
     padding-left: 10px;
   }
-  
 
-  .destinations,
   .places {
     grid-template-columns: 1fr;
     padding: 10px;
   }
 
-  .place,
-  .destination-card {
+  .place {
     width: 100%;
   }
 
@@ -358,10 +338,6 @@ main section {
   table {
     width: 100%;
     font-size: 14px;
-  }
-
-  .image-block {
-    padding: 0 10px;
   }
 
   .welcomeheading {
