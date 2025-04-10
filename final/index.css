@@ -185,6 +185,10 @@ footer {
   width: 100%;
 }
 
+.video {
+  padding: 10px;
+}
+
 .dish .match-img {
   height: 350px;
   width: 100%;
@@ -192,6 +196,15 @@ footer {
   object-position: center top;
   border-radius: 6px;
   margin-bottom: 10px;
+}
+
+.match-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 
